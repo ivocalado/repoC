@@ -26,7 +26,7 @@ resource "random_id" "rand" {
 
 resource "docker_image" "nginx" {
   name         = "nginx:latest"
-  keep_locally = false
+  keep_locally = true
 }
 
 resource "docker_container" "nginx" {
